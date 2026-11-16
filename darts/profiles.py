@@ -8,12 +8,16 @@ from .schema import MatchRecord, PlayerProfile
 
 HALF_LIFE_DAYS = 180.0
 
-# Prior verso cui vengono "tirati" i giocatori con pochi dati.
-# Valori provvisori: da ricalibrare sullo storico reale (idealmente per fascia
-# di ranking, perche' un qualificato sconosciuto e' in media sotto il campo).
-PRIOR = {"avg3": 90.0, "n180_per_leg": 0.22, "checkout_pct": 0.38}
-PRIOR_LEGS = 120.0           # peso del prior, in leg equivalenti
-PRIOR_CHECKOUT_DARTS = 300.0  # peso del prior per il checkout, in freccette al doppio
+# Prior verso cui vengono "tirati" i giocatori con pochi dati. Misurato sullo
+# storico reale 2026: i giocatori con meno di 3 match hanno in media 85.6 di
+# media, 0.17 180 per leg e 31% al checkout (il campo intero: 93.7 / 0.27 / 38%).
+# Il prior rappresenta quindi un qualificato poco noto, non il giocatore medio.
+PRIOR = {"avg3": 86.5, "n180_per_leg": 0.18, "checkout_pct": 0.32}
+# Peso del prior volutamente basso: sul Mondiale 2025/26 un peso di 60 leg
+# faceva sottostimare del 14% i 180 dei giocatori con storico (li tirava verso
+# il livello di un qualificato); con 15 leg lo scarto scende sotto il 7%.
+PRIOR_LEGS = 15.0             # peso del prior, in leg equivalenti
+PRIOR_CHECKOUT_DARTS = 40.0   # peso del prior per il checkout, in freccette al doppio
 
 
 def _confidence(eff_legs: float) -> str:

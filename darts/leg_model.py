@@ -163,6 +163,16 @@ def generate_pool(params: LegParams, n_legs: int, rng: np.random.Generator) -> L
     return LegPool(n_visits=n_visits, last_darts=last_darts, cum180=cum180, cumscore=cumscore)
 
 
+def concat_pools(pools) -> LegPool:
+    """Unisce piu' pool in uno solo (blocchi consecutivi della stessa dimensione)."""
+    return LegPool(
+        n_visits=np.concatenate([p.n_visits for p in pools]),
+        last_darts=np.concatenate([p.last_darts for p in pools]),
+        cum180=np.concatenate([p.cum180 for p in pools]),
+        cumscore=np.concatenate([p.cumscore for p in pools]),
+    )
+
+
 def play_legs(pool_a: LegPool, idx_a, pool_b: LegPool, idx_b, a_starts):
     """Gioca un leg per ogni elemento degli array. Restituisce un dict di array."""
     va = pool_a.n_visits[idx_a].astype(np.int32)

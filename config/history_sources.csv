@@ -18,7 +18,6 @@ globaldarts_event,https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/eur
 globaldarts_event,https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/Masters26/masters0.html,World Masters 2026,sets,tv,2026-01-31
 globaldarts_event,https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/UKOpen26/bolt0.php,UK Open 2026,legs,tv,2026-03-07
 globaldarts_event,https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat0.html,World Matchplay 2026,legs,tv,2026-07-22
-globaldarts_event,https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/Worldgrandprix26/grandprix0.html,World Grand Prix 2026,sets,tv,2026-10-07
 globaldarts_event,https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/EuropeanChamp26/european0.html,European Championship 2026,legs,tv,2026-10-25
 globaldarts_event,https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/GSOD26/GSOD0.html,Grand Slam of Darts 2026,legs,tv,2026-11-12
 globaldarts_event,https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/Players26/players0.html,Players Championship Finals 2026,legs,tv,2026-11-22
@@ -26,3 +25,4 @@ darts1_pdf,https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Achtelfin
 darts1_pdf,https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Viertelfinale.pdf,PDC World Championship 2026,sets,tv,2026-01-01
 darts1_pdf,https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Halbfinale.pdf,PDC World Championship 2026,sets,tv,2026-01-02
 darts1_pdf,https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Finale.pdf,PDC World Championship 2026,sets,tv,2026-01-03
+globaldarts_index,https://globaldarts.de/globalDartsEN/Turniere/indexturniere25.html,,auto,tv,2025

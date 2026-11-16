@@ -7,11 +7,34 @@ from dataclasses import dataclass
 import numpy as np
 
 from .formats import get_format
-from .leg_model import LegPool, calibrate, generate_pool, play_legs
+from .leg_model import LegPool, calibrate, concat_pools, generate_pool, play_legs
 from .schema import Fixture, MatchFormat, PlayerProfile
 
 DEFAULT_SIMS = 10_000
-POOL_SIZE = 20_000
+
+# Varianza di forma tra un match e l'altro, stimata sullo storico reale 2026
+# (964 match): la media di un giocatore oscilla da match a match piu' di quanto
+# spieghi il solo rumore campionario, e i 180 sono piu' dispersi di una Poisson.
+FORM_SD_AVG = 2.0     # punti di media 3 freccette
+FORM_SD_180 = 0.40    # deviazione standard del logaritmo del tasso di 180
+BLOCK_SIZE = 6_000    # leg simulati per ciascun livello di forma
+
+_Z_AVG = np.array([-1.2816, -0.5244, 0.0, 0.5244, 1.2816])
+_Z_AVG = _Z_AVG / _Z_AVG.std()               # 5 livelli equiprobabili, varianza 1
+_Z_180 = np.array([-1.2247, 0.0, 1.2247])    # 3 livelli equiprobabili, varianza 1
+
+
+@dataclass
+class FormPool:
+    """Pool di leg di un giocatore, a blocchi: un blocco per livello di forma."""
+
+    pool: LegPool
+    n_blocks: int
+    block_size: int
+
+
+def _as_form_pool(pool) -> FormPool:
+    return pool if isinstance(pool, FormPool) else FormPool(pool, 1, len(pool))
 
 
 @dataclass
@@ -35,9 +58,15 @@ class SimResult:
         )
 
 
-def simulate_match(pool_a: LegPool, pool_b: LegPool, fmt: MatchFormat,
+def simulate_match(pool_a, pool_b, fmt: MatchFormat,
                    n_sims: int, rng: np.random.Generator) -> SimResult:
+    """pool_a / pool_b: LegPool oppure FormPool. Con un FormPool ogni
+    simulazione estrae un livello di forma per giocatore, valido per tutto il match."""
     n = n_sims
+    fa, fb = _as_form_pool(pool_a), _as_form_pool(pool_b)
+    pool_a, pool_b = fa.pool, fb.pool
+    off_a = rng.integers(0, fa.n_blocks, n) * fa.block_size
+    off_b = rng.integers(0, fb.n_blocks, n) * fb.block_size
     S, L = fmt.sets_to_win, fmt.legs_per_set_to_win
     sd_legs = fmt.tiebreak_sudden_death_at + 1
 
@@ -61,8 +90,8 @@ def simulate_match(pool_a: LegPool, pool_b: LegPool, fmt: MatchFormat,
             break
         a_starts = set_starter_a ^ (leg_in_set % 2 == 1)
         out = play_legs(
-            pool_a, rng.integers(0, len(pool_a), n),
-            pool_b, rng.integers(0, len(pool_b), n),
+            pool_a, off_a + rng.integers(0, fa.block_size, n),
+            pool_b, off_b + rng.integers(0, fb.block_size, n),
             a_starts,
         )
         aw = out["a_wins"] & act
@@ -97,13 +126,24 @@ def _seed(*parts: str) -> int:
     return int.from_bytes(digest[:8], "big")
 
 
-def player_pool(profile: PlayerProfile, seed: int) -> LegPool:
-    params = calibrate(profile.avg3, profile.n180_per_leg, profile.checkout_pct)
-    return generate_pool(params, POOL_SIZE, np.random.default_rng(seed))
+def player_pool(profile: PlayerProfile, seed: int, form: bool = True) -> FormPool:
+    """Pool del giocatore. Con form=True: 15 blocchi (5 livelli di media x 3 di 180)."""
+    rng = np.random.default_rng(seed)
+    if not form:
+        params = calibrate(profile.avg3, profile.n180_per_leg, profile.checkout_pct)
+        return FormPool(generate_pool(params, BLOCK_SIZE * 3, rng), 1, BLOCK_SIZE * 3)
+    blocks = []
+    for za in _Z_AVG:
+        for zk in _Z_180:
+            avg = profile.avg3 + FORM_SD_AVG * za
+            rate = profile.n180_per_leg * float(np.exp(FORM_SD_180 * zk - 0.5 * FORM_SD_180 ** 2))
+            blocks.append(generate_pool(calibrate(avg, rate, profile.checkout_pct), BLOCK_SIZE, rng))
+    return FormPool(concat_pools(blocks), len(blocks), BLOCK_SIZE)
 
 
 def project_fixture(fixture: Fixture, prof_a: PlayerProfile, prof_b: PlayerProfile,
-                    n_sims: int = DEFAULT_SIMS, fmt: MatchFormat | None = None) -> SimResult:
+                    n_sims: int = DEFAULT_SIMS, fmt: MatchFormat | None = None,
+                    form: bool = True) -> SimResult:
     """Simula un match in calendario.
 
     Deterministico: il seed deriva dall'identita' del match. I giocatori
@@ -114,7 +154,7 @@ def project_fixture(fixture: Fixture, prof_a: PlayerProfile, prof_b: PlayerProfi
     swap = prof_a.name > prof_b.name
     first, second = (prof_b, prof_a) if swap else (prof_a, prof_b)
     key = (first.name, second.name, fixture.date.isoformat(), fixture.tournament, fixture.round)
-    pool_1 = player_pool(first, _seed("pool", first.name, *key))
-    pool_2 = player_pool(second, _seed("pool", second.name, *key))
+    pool_1 = player_pool(first, _seed("pool", first.name, *key), form)
+    pool_2 = player_pool(second, _seed("pool", second.name, *key), form)
     res = simulate_match(pool_1, pool_2, fmt, n_sims, np.random.default_rng(_seed("match", *key)))
     return res.mirror() if swap else res

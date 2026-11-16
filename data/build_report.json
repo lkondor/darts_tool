@@ -1,0 +1,1131 @@
+{
+ "matches": 964,
+ "duplicates_removed": 14,
+ "by_source": {
+  "globaldarts": 949,
+  "darts1": 15
+ },
+ "by_tournament": {
+  "PDC World Championship 2026": 126,
+  "European Tour 1 2026": 47,
+  "European Tour 2 2026": 47,
+  "European Tour 3 2026": 47,
+  "European Tour 4 2026": 47,
+  "European Tour 5 2026": 47,
+  "European Tour 6 2026": 47,
+  "European Tour 7 2026": 47,
+  "European Tour 8 2026": 47,
+  "European Tour 9 2026": 47,
+  "European Tour 10 2026": 46,
+  "European Tour 11 2026": 47,
+  "European Tour 12 2026": 47,
+  "European Tour 13 2026": 47,
+  "European Tour 14 2026": 47,
+  "European Tour 15 2026": 47,
+  "World Masters 2026": 43,
+  "UK Open 2026": 31,
+  "World Matchplay 2026": 30,
+  "European Championship 2026": 30
+ },
+ "players": 205,
+ "player_names": {
+  "Adam Gawlas": 5,
+  "Adam Leek": 1,
+  "Adam Lipscombe": 2,
+  "Adam Sevada": 2,
+  "Alan Soutar": 5,
+  "Andreas Harrysson": 7,
+  "Andrew Gilding": 36,
+  "András Borbély": 1,
+  "Anton Östlund": 2,
+  "Arno Merk": 3,
+  "Azemoto": 1,
+  "Baetens": 7,
+  "Beau Greaves": 5,
+  "Behrens": 2,
+  "Benjamin Pratnemer": 2,
+  "Beveridge": 2,
+  "Biro": 1,
+  "Bradley Brooks": 11,
+  "Brejcha": 1,
+  "Brendan Dolan": 10,
+  "Brulinski": 1,
+  "Buntz": 1,
+  "Callan Rydz": 8,
+  "Cam Crabtree": 2,
+  "Cameron Menzies": 34,
+  "Campbell": 1,
+  "Carl Sneyd": 1,
+  "Caron": 1,
+  "Charlie Manby": 8,
+  "Chris Dobey": 34,
+  "Chris Landman": 5,
+  "Christian Kist": 2,
+  "Comito": 2,
+  "Connor Scutt": 10,
+  "Cor Dekker": 2,
+  "Cristo Reyes": 26,
+  "Damon Heta": 46,
+  "Daniel Klose": 2,
+  "Danny Noppert": 48,
+  "Darius Labanauskas": 4,
+  "Darryl Pilgrim": 2,
+  "Daryl Gurney": 26,
+  "Dave Chisnall": 31,
+  "David Cameron": 2,
+  "David Munyua": 2,
+  "Davies": 2,
+  "Dennant": 1,
+  "Devroey": 1,
+  "Dimitri Van den Bergh": 5,
+  "Dirk van Duijvenbode": 41,
+  "Dominik Gruellich": 2,
+  "Dudek": 1,
+  "Engstroem": 1,
+  "Engström": 1,
+  "Evetts": 1,
+  "Fallon Sherrock": 1,
+  "Fehlmann": 1,
+  "Gabriel Clemens": 5,
+  "Gary Anderson": 23,
+  "Gates": 2,
+  "Gemma Hayter": 1,
+  "Gerwyn Price": 38,
+  "Gian van Veen": 54,
+  "Grudziecki": 1,
+  "Haarju": 1,
+  "Haavisto": 2,
+  "Hansen": 1,
+  "Hardy": 1,
+  "Hausotter": 3,
+  "Hempel": 1,
+  "Holub": 1,
+  "Homola": 1,
+  "Horvat": 3,
+  "Hurtz": 1,
+  "Ian White": 7,
+  "Ilagan": 1,
+  "Jacobs": 1,
+  "Jamai van den Herik": 1,
+  "James Hurrell": 14,
+  "James Wade": 37,
+  "Jeffrey De Graaf": 14,
+  "Jeffrey Sparidaans": 1,
+  "Jeffrey de Zwaan": 4,
+  "Jehirszki": 2,
+  "Jermaine Wattimena": 38,
+  "Jesus Salate": 1,
+  "Jim Long": 4,
+  "Jimmy van Schie": 8,
+  "Joe Cullen": 26,
+  "Joe Hunt": 1,
+  "Jonny Clayton": 42,
+  "Josh Rock": 40,
+  "Jurjen van der Velde": 2,
+  "Justin Hood": 8,
+  "Kadar": 2,
+  "Kai Gotthardt": 1,
+  "Karel Sedlacek": 24,
+  "Kciuk": 3,
+  "Keane Barry": 15,
+  "Kelemen": 1,
+  "Kevin Doets": 44,
+  "Kim Huybrechts": 24,
+  "Kovacs": 5,
+  "Krcmar": 6,
+  "Krivka": 1,
+  "Krzysztof Ratajski": 48,
+  "Lankhuizen": 1,
+  "Lerchbacher": 1,
+  "Lim": 2,
+  "Lisa Ashton": 1,
+  "Lukas Wenig": 6,
+  "Luke Humphries": 33,
+  "Luke Littler": 38,
+  "Luke Woodhouse": 41,
+  "Maciejczak": 1,
+  "Madars Razma": 14,
+  "Maendl-Lawrance": 1,
+  "Maik Kuivenhoven": 7,
+  "Major": 3,
+  "Man Lok Leung": 1,
+  "Mario Vandenbogaerde": 6,
+  "Martin Lukeman": 3,
+  "Martin Schindler": 36,
+  "Marvin Kraft": 1,
+  "Masalin": 4,
+  "Masino": 1,
+  "Max Hopp": 5,
+  "Melderis": 2,
+  "Mensur Suljovic": 13,
+  "Mervyn King": 2,
+  "Michael Smith": 22,
+  "Michael van Gerwen": 39,
+  "Mickey Mansell": 10,
+  "Mike De Decker": 17,
+  "Motomu Sakai": 3,
+  "Nathan Aspinall": 39,
+  "Nick Kenny": 3,
+  "Niels Zonneveld": 44,
+  "Niko Springer": 34,
+  "Nitin Kumar": 2,
+  "Oskar Lukasiak": 3,
+  "Owen Bates": 3,
+  "Paul Krohne": 5,
+  "Peter Wright": 7,
+  "Pisek": 1,
+  "Preis": 1,
+  "Puha": 1,
+  "Pusey": 1,
+  "Raymond van Barneveld": 7,
+  "Rhys Griffin": 1,
+  "Ricardo Pietreczko": 11,
+  "Richard Veenstra": 7,
+  "Ricky Evans": 13,
+  "Riedtke": 1,
+  "Ritchie Edhouse": 6,
+  "Rob Cross": 41,
+  "Rob Owen": 6,
+  "Robak": 1,
+  "Rosi": 1,
+  "Ross": 2,
+  "Ross Smith": 46,
+  "Ryan Joyce": 42,
+  "Ryan Meikle": 5,
+  "Ryan Searle": 40,
+  "Samuel Price": 2,
+  "Schmidt": 4,
+  "Schweyen": 1,
+  "Scott Williams": 4,
+  "Sebastian Bialecki": 17,
+  "Shane McGuirk": 3,
+  "Sietse Lap": 2,
+  "Sliacky": 1,
+  "Smejda": 1,
+  "Stefan Bellmont": 3,
+  "Stephen Bunting": 35,
+  "Stephen Burton": 6,
+  "Steve Lennon": 2,
+  "Stoeckli": 1,
+  "Tata": 2,
+  "Tatsunami": 1,
+  "Tavis Dudeney": 2,
+  "Taylor": 1,
+  "Thibault Tricole": 2,
+  "Thomas Lovely": 2,
+  "Tom Bissell": 4,
+  "Tom Sykes": 7,
+  "Tous": 1,
+  "Toylo": 1,
+  "Troppmann": 1,
+  "Tyler Thorpe": 3,
+  "Unterbuchner": 3,
+  "Uuldriks": 2,
+  "Varaljay": 1,
+  "Varila": 1,
+  "Verberk": 1,
+  "Wellinger": 1,
+  "Wesley Plaisier": 3,
+  "Wessel Nijman": 46,
+  "Whitlock": 1,
+  "William O'Connor": 36,
+  "Zwittnigg": 1,
+  "d.Sousa": 1,
+  "v.Leuven": 2,
+  "v.d.Weerd": 1,
+  "Êngstroem": 1
+ },
+ "unresolved_names": {
+  "Puha": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Davies": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Krcmar": {
+   "status": "unknown",
+   "matches": 6,
+   "suggestion": null
+  },
+  "Lim": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Evetts": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Tata": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Taylor": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Beveridge": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Buntz": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "v.Leuven": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Baetens": {
+   "status": "unknown",
+   "matches": 7,
+   "suggestion": "Owen Bates"
+  },
+  "Whitlock": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "d.Sousa": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Comito": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Campbell": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Azemoto": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Kovacs": {
+   "status": "unknown",
+   "matches": 5,
+   "suggestion": null
+  },
+  "Tatsunami": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Toylo": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Dennant": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Gates": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Kciuk": {
+   "status": "unknown",
+   "matches": 3,
+   "suggestion": null
+  },
+  "Ilagan": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Pusey": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Maciejczak": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Grudziecki": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Robak": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Masalin": {
+   "status": "unknown",
+   "matches": 4,
+   "suggestion": null
+  },
+  "Preis": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Hempel": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Horvat": {
+   "status": "unknown",
+   "matches": 3,
+   "suggestion": null
+  },
+  "Brulinski": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Haavisto": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Devroey": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Schweyen": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Hausotter": {
+   "status": "unknown",
+   "matches": 3,
+   "suggestion": null
+  },
+  "Behrens": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Troppmann": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Schmidt": {
+   "status": "unknown",
+   "matches": 4,
+   "suggestion": null
+  },
+  "Unterbuchner": {
+   "status": "unknown",
+   "matches": 3,
+   "suggestion": null
+  },
+  "Melderis": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Hurtz": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Krivka": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Masino": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Zwittnigg": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Hardy": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Lerchbacher": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Jehirszki": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Engstroem": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Maendl-Lawrance": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Haarju": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Riedtke": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Major": {
+   "status": "unknown",
+   "matches": 3,
+   "suggestion": null
+  },
+  "Sliacky": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Engström": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Dudek": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Holub": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Varaljay": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Kelemen": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Varila": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Smejda": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "v.d.Weerd": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Kadar": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Biro": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Pisek": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Êngstroem": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Rosi": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Brejcha": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Homola": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Tous": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Hansen": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Caron": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Jacobs": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Lankhuizen": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Wellinger": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Stoeckli": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Fehlmann": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Uuldriks": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  },
+  "Verberk": {
+   "status": "unknown",
+   "matches": 1,
+   "suggestion": null
+  },
+  "Ross": {
+   "status": "unknown",
+   "matches": 2,
+   "suggestion": null
+  }
+ },
+ "sources": [
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm0.html",
+   "tournament": "PDC World Championship 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm1.html",
+     "matches": 4
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm2.html",
+     "matches": 8
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm3.html",
+     "matches": 8
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm4.html",
+     "matches": 8
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm5.html",
+     "matches": 8
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm6.html",
+     "matches": 8
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm7.html",
+     "matches": 4
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm8.html",
+     "matches": 8
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm9.html",
+     "matches": 8
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm10.html",
+     "matches": 7
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm11.html",
+     "matches": 7
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm12.html",
+     "matches": 8
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm13.html",
+     "matches": 8
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm14.html",
+     "matches": 6
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm15.html",
+     "matches": 6
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm16.html",
+     "matches": 6
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm17.html",
+     "matches": 6
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm18.html",
+     "matches": 4
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm19.html",
+     "matches": 2
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm20.html",
+     "matches": 1
+    }
+   ],
+   "date_used": "2025-12-22",
+   "matches": 125
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E1Krakau.html",
+   "tournament": "European Tour 1 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Krakau4.html",
+     "matches": 47
+    }
+   ],
+   "date_used": "2026-02-20",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E2Goettingen.html",
+   "tournament": "European Tour 2 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Goettingen4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-03-13",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E3Wieze.html",
+   "tournament": "European Tour 3 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Wieze4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-03-20",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E4Muenchen.html",
+   "tournament": "European Tour 4 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Muenchen4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-04-04",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E5Sindelfingen.html",
+   "tournament": "European Tour 5 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Sindelfingen4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-04-17",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E6Graz.html",
+   "tournament": "European Tour 6 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Graz4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-05-08",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E7Riesa.html",
+   "tournament": "European Tour 7 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Riesa4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-05-22",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E8Kiel.html",
+   "tournament": "European Tour 8 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Kiel4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-05-29",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E9Bratislava.html",
+   "tournament": "European Tour 9 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Bratislava4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-06-19",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E10Leverkusen.html",
+   "tournament": "European Tour 10 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Leverkusen4.html",
+     "matches": 46
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-07-10",
+   "matches": 46
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E11Budapest.html",
+   "tournament": "European Tour 11 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Budapest4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-08-28",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E12Prag.html",
+   "tournament": "European Tour 12 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Prag4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-09-04",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E13Antwerpen.html",
+   "tournament": "European Tour 13 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Antwerpen4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-09-11",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E14Basel.html",
+   "tournament": "European Tour 14 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Basel4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-10-09",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E15Maastricht.html",
+   "tournament": "European Tour 15 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/Maastricht4.html",
+     "matches": 47
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/StatistikET26.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-10-16",
+   "matches": 47
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/Masters26/masters0.html",
+   "tournament": "World Masters 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/Masters26/masters1.html#D",
+     "matches": 16
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/Masters26/masters1.html#F",
+     "matches": 16
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/Masters26/masters2.html",
+     "matches": 4
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/Masters26/masters3.html",
+     "matches": 7
+    }
+   ],
+   "date_used": "2026-01-31",
+   "matches": 43
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/UKOpen26/bolt0.php",
+   "tournament": "UK Open 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/UKOpen26/Statistik.html",
+     "matches": 31
+    }
+   ],
+   "date_used": "2026-03-07",
+   "matches": 31
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat0.html",
+   "tournament": "World Matchplay 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat1.html",
+     "matches": 4
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat2.html",
+     "matches": 8
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat3.html",
+     "matches": 4
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat4.html",
+     "matches": 4
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat5.html",
+     "matches": 3
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat6.html",
+     "matches": 2
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat7.html",
+     "matches": 2
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat8.html",
+     "matches": 2
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/women.html",
+     "matches": 0
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/worldmat9.html",
+     "matches": 1
+    },
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/worldmatch26/Women.html",
+     "matches": 0
+    }
+   ],
+   "date_used": "2026-07-22",
+   "matches": 30
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/EuropeanChamp26/european0.html",
+   "tournament": "European Championship 2026",
+   "stat_pages": [
+    {
+     "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/EuropeanChamp26/Statistik.html",
+     "matches": 30
+    }
+   ],
+   "date_used": "2026-10-25",
+   "matches": 30
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/GSOD26/GSOD0.html",
+   "tournament": "Grand Slam of Darts 2026",
+   "stat_pages": [],
+   "date_used": "2026-11-12",
+   "matches": 0
+  },
+  {
+   "kind": "globaldarts_event",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/Players26/players0.html",
+   "tournament": "Players Championship Finals 2026",
+   "stat_pages": [],
+   "date_used": "2026-11-22",
+   "matches": 0
+  },
+  {
+   "kind": "darts1_pdf",
+   "url": "https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Achtelfinale.pdf",
+   "tournament": "PDC World Championship 2026",
+   "matches": 8
+  },
+  {
+   "kind": "darts1_pdf",
+   "url": "https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Viertelfinale.pdf",
+   "tournament": "PDC World Championship 2026",
+   "matches": 4
+  },
+  {
+   "kind": "darts1_pdf",
+   "url": "https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Halbfinale.pdf",
+   "tournament": "PDC World Championship 2026",
+   "matches": 2
+  },
+  {
+   "kind": "darts1_pdf",
+   "url": "https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Finale.pdf",
+   "tournament": "PDC World Championship 2026",
+   "matches": 1
+  },
+  {
+   "kind": "globaldarts_index",
+   "url": "https://globaldarts.de/globalDartsEN/Turniere/indexturniere25.html",
+   "error": "FileNotFoundError(2, 'No such file or directory')"
+  }
+ ]
+}

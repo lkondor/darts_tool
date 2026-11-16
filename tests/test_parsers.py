@@ -123,3 +123,61 @@ def test_history_roundtrip_and_dedupe(tmp_path):
     dup = copy.deepcopy(recs[0])
     dup.source, dup.p1.player, dup.p2.player = "globaldarts", "Searle", "Clayton"
     assert len(bh.dedupe(recs + [dup])) == len(recs)
+
+
+def _bh():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("bh", ROOT / "scripts" / "build_history.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def test_globaldarts_world_championship_day_page():
+    html = (FIX / "globaldarts_wm2026_day2.html").read_bytes()
+    recs = parse_stats_html(html, "PDC World Championship 2026", date(2025, 12, 22), "sets")
+    assert len(recs) == 8
+    first = recs[0]
+    assert (first.p1.player, first.p1.sets_won, first.p2.sets_won) == ("Zonneveld", 3, 0)
+    assert (first.p1.legs_won, first.p1.checkout_attempts, first.p1.highest_checkout) == (9, 25, 158)
+    assert first.p1.n100_plus == 24 + 3
+    dekker = recs[3].p2                     # "-" al posto dei 180 vale 0
+    assert dekker.player == "Dekker" and dekker.n180 == 0
+
+
+def test_calendar_discovery():
+    bh = _bh()
+    html = (FIX / "globaldarts_index2026.html").read_bytes()
+    events = bh.index_events(html, "https://globaldarts.de/globalDartsEN/turniere/indexturniere.html", 2026)
+    urls = [u for u, _ in events]
+    names = [n for _, n in events]
+    assert len(events) == 23
+    assert sum("europeantour26" in u for u in urls) == 15
+    assert "European Tour 1 2026" in names and "UK Open 2026" in names
+    assert not any("KleinereTurniere" in u or "grandprix" in u.lower() for u in urls)
+    assert not any("Turniere2027" in u for u in urls)
+
+
+def test_name_resolver():
+    from darts.names import NameResolver
+    r = NameResolver.from_config(ROOT / "config")
+    assert r.resolve("Littler") == ("Luke Littler", "unique")
+    assert r.resolve("v.Veen") == ("Gian van Veen", "unique")
+    assert r.resolve("v.d.Bergh")[0] == r.resolve("V.d.Bergh")[0] == "Dimitri Van den Bergh"
+    assert r.resolve("M.Smith") == ("Michael Smith", "unique")
+    assert r.resolve("R.Smith") == ("Ross Smith", "alias")
+    assert r.resolve("S.Price")[0] == "Samuel Price"
+    assert r.resolve("Gary Anderson") == ("Gary Anderson", "exact")
+    assert r.resolve("Aspnall") == ("Nathan Aspinall", "alias")
+    # un refuso non in elenco non viene corretto da solo
+    assert r.resolve("Baetens") == ("Baetens", "unknown")
+    assert r.resolve("Sconosciuto")[1] == "unknown"
+
+
+def test_real_history_loads_and_builds_profiles():
+    from darts.io import records_from_json
+    recs = records_from_json(ROOT / "data" / "history.json")
+    assert len(recs) > 900
+    profs = build_profiles(recs, as_of=date(2026, 12, 11))
+    assert profs["Luke Littler"].avg3 > profs["Ryan Searle"].avg3
+    assert 0.1 < profs["Luke Littler"].n180_per_leg < 0.8
