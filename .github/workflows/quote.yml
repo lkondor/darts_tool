@@ -1,0 +1,38 @@
+name: Quote
+
+# Proiezione di un match dai profili reali.
+# Actions -> Quote -> Run workflow, inserire i due giocatori e il turno.
+# Il risultato e' nel log del passo "Proiezione" e nell'artifact "quote".
+on:
+  workflow_dispatch:
+    inputs:
+      player_a:
+        description: "Giocatore A (es. Luke Littler)"
+        required: true
+      player_b:
+        description: "Giocatore B (es. Gian van Veen)"
+        required: true
+      round:
+        description: "Turno: R1 R2 R3 R4 QF SF F"
+        required: true
+        default: "R1"
+
+jobs:
+  quote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Proiezione
+        env:
+          PLAYER_A: ${{ inputs.player_a }}
+          PLAYER_B: ${{ inputs.player_b }}
+          ROUND: ${{ inputs.round }}
+        run: python scripts/quote.py "$PLAYER_A" "$PLAYER_B" --round "$ROUND"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quote
+          path: output/quote.json
