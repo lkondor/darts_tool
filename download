@@ -1,7 +1,0 @@
-__pycache__/
-*.pyc
-.pytest_cache/
-output/
-probe_output/
-data/raw/
-data/sportradar_calls.json
