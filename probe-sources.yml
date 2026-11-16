@@ -1,0 +1,21 @@
+name: Probe sources
+
+# Avvio manuale: Actions -> Probe sources -> Run workflow.
+# Al termine, scaricare l'artifact "probe-output" dalla pagina del run.
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - run: python scripts/probe_sources.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: probe-output
+          path: probe_output/
