@@ -1,14 +1,24 @@
 # Un URL per riga. Le righe che iniziano con # sono ignorate.
+# "+" davanti all'URL = scarica anche i link della pagina (un livello).
 
-# darts1.de - PDF con statistiche per turno (Mondiale 2026, quarti)
-https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Viertelfinale.pdf
+# --- Sonda 2: copertura reale di globaldarts.de sul 2026 ---------------------
+# Mondiale 2025/26 (tutti i turni?), eventi floor, European Tour, major
++https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/pdcwm26/pdcwm0.html
++https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/KleinereTurniere26/PCHildesheim1.html
++https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/KleinereTurniere26/PCLeicester7.html
++https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/europeantour26/E1Krakau.html
++https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/GSOD26/GSOD0.html
++https://globaldarts.de/globalDartsEN/Turniere/Turniere2026/Players26/players0.html
+https://globaldarts.de/globalDartsEN/Turniere/Turniere2027/pdcwm27/pdcwm0.html
 
-# globaldarts.de - tabelle HTML media / 180 / doppi per match (UK Open 2024)
-https://globaldarts.de/globalDartsEN/Turniere/Turniere2024/UKOpen24/Statistik.html
-https://globaldarts.de/globalDartsEN/turniere/indexturniere.html
-
-# DartConnect - eventi floor PDC (probabile app JavaScript)
-https://tv.dartconnect.com/events/pdc
-
-# dartsdatabase - home ed elenco eventi
-https://www.dartsdatabase.co.uk/index.php
+# --- Sonda 2: altri turni del Mondiale 2026 su darts1.de ---------------------
+# I primi due nomi seguono lo schema gia' visto; gli altri sono tentativi:
+# un 404 e' comunque un'informazione utile.
+https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Achtelfinale.pdf
+https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Halbfinale.pdf
+https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Finale.pdf
+https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-3-Runde.pdf
+https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-2-Runde.pdf
+https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-1-Runde.pdf
++https://www.darts1.de/dart-wm/
+https://www.darts1.de/players-championship/PDC-Players-Championship-Finals-2025-Statistiken-Achtelfinale.pdf
