@@ -1,0 +1,14 @@
+# Un URL per riga. Le righe che iniziano con # sono ignorate.
+
+# darts1.de - PDF con statistiche per turno (Mondiale 2026, quarti)
+https://www.darts1.de/dart-wm/PDC-Darts-WM-2026-Statistiken-Viertelfinale.pdf
+
+# globaldarts.de - tabelle HTML media / 180 / doppi per match (UK Open 2024)
+https://globaldarts.de/globalDartsEN/Turniere/Turniere2024/UKOpen24/Statistik.html
+https://globaldarts.de/globalDartsEN/turniere/indexturniere.html
+
+# DartConnect - eventi floor PDC (probabile app JavaScript)
+https://tv.dartconnect.com/events/pdc
+
+# dartsdatabase - home ed elenco eventi
+https://www.dartsdatabase.co.uk/index.php
