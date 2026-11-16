@@ -1,8 +1,8 @@
 # darts_stats_tool
 
 Proiezioni Monte Carlo per il Mondiale PDC: H2H, handicap, totale set, totale
-leg, 180 giocatore, 180 totali. Versione 0.1: scheletro funzionante su dati
-sintetici, in attesa delle fonti reali.
+leg, 180 giocatore, 180 totali. Versione 0.3: scheletro funzionante su dati
+sintetici, parser dello storico scritti su file reali e raccolta automatica.
 
 ## Stato
 
@@ -16,7 +16,10 @@ sintetici, in attesa delle fonti reali.
 | Profili giocatore (`darts/profiles.py`) | pronto, prior provvisorio |
 | Fonte sintetica (`darts/adapters/synthetic.py`) | pronta (dati inventati) |
 | Adapter Sportradar (`darts/adapters/sportradar.py`) | client e budget pronti, parser da scrivere sui payload reali |
-| Adapter storico (darts1.de / altre) | da scrivere dopo la sonda |
+| Parser darts1.de (`darts/adapters/darts1.py`) | testato sui PDF reali del Mondiale 2026 (ottavi-finale) e delle Players Championship Finals 2025 (formato a leg) |
+| Parser globaldarts.de (`darts/adapters/globaldarts.py`) | testato sulle pagine reali UK Open 2024 ed European Tour 1 2026; nomi col solo cognome |
+| Raccolta storico (`scripts/build_history.py`, workflow **Build history**) | pronta; pagine giornaliere del Mondiale non ancora viste |
+| Riconciliazione nomi tra fonti | da fare sull'elenco prodotto dalla raccolta |
 | Elo, dashboard Streamlit, tracking, bot | non iniziati |
 
 ## Come si usa
@@ -61,6 +64,10 @@ ogni push.
 - Nessun effetto palco (TV contro floor) e nessun Elo.
 
 ## Fonti dati
+
+- `scripts/build_history.py` + workflow **Build history**: legge
+  `config/history_sources.csv`, scarica e converte le pagine, scrive
+  `data/history.json` e `data/build_report.json` (artifact `history`).
 
 - `scripts/probe_sources.py` + workflow **Probe sources**: scarica le pagine
   candidate elencate in `config/probe_urls.txt` e le salva come artifact. I
